@@ -24,7 +24,7 @@ if [ -n "$DATABASE_URL" ]; then
   <name>defaultDS</name>
   <delegator-name>default</delegator-name>
   <database-type>$DB_TYPE</database-type>
-  <schema-name>public</schema-name>
+  <schema-name>$DB_NAME</schema-name>
   <jdbc-datasource>
     <url>$DB_JDBC_URL</url>
     <driver-class>$DB_JDBC_DRIVER</driver-class>
